@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const styles = {
   container: {
@@ -31,6 +32,31 @@ const styles = {
 const Home = () => {
   return (
     <div style={styles.container}>
+      <Helmet>
+        <title>Home - My App</title>
+        <meta name="description" content="This is the home page of my app." />
+        <meta property="og:title" content="Home - My App" />
+        <meta
+          property="og:description"
+          content="This is the home page of my app."
+        />
+        <meta
+          property="og:image"
+          content="https://myapp.com/static/home-og-image.jpg"
+        />
+        <meta property="og:url" content="https://myapp.com/" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Home - My App" />
+        <meta
+          name="twitter:description"
+          content="This is the home page of my app."
+        />
+        <meta
+          name="twitter:image"
+          content="https://myapp.com/static/home-twitter-image.jpg"
+        />
+      </Helmet>
       <div style={styles.section}>
         <h1 style={styles.heading}>Client-side rendering (CSR)</h1>
         <p style={styles.content}>

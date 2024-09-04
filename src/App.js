@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
+
 const styles = {
   main_header: {
     backgroundColor: "white",

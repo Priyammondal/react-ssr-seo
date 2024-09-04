@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import { Helmet } from "react-helmet-async";
 
 const styles = {
   container: {
@@ -35,6 +36,34 @@ const About = () => {
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <div style={styles.container}>
+        <Helmet>
+          <title>About - My App</title>
+          <meta
+            name="description"
+            content="Learn more about us on the about page."
+          />
+          <meta property="og:title" content="About - My App" />
+          <meta
+            property="og:description"
+            content="Learn more about us on the about page."
+          />
+          <meta
+            property="og:image"
+            content="https://priyammondal.github.io/portfolio/priyam_m.png"
+          />
+          <meta property="og:url" content="https://myapp.com/about" />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="About - My App" />
+          <meta
+            name="twitter:description"
+            content="Learn more about us on the about page."
+          />
+          <meta
+            name="twitter:image"
+            content="https://myapp.com/static/about-twitter-image.jpg"
+          />
+        </Helmet>
         <div>
           <h1 style={styles.heading}> Server React DOM APIs </h1>
           <div style={styles.list}>
