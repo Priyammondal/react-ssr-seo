@@ -9,12 +9,12 @@ const styles = {
       "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
   },
 };
-const Contact = () => {
+const Rooms = () => {
   return (
     <div style={styles.container}>
-      <h2>Contact Page</h2>
+      <h2>GuestRooms Page</h2>
     </div>
   );
 };
 
-export default Contact;
+export default Rooms;
